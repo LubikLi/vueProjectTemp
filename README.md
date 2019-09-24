@@ -1,6 +1,3 @@
-# y
-
-> y
 
 ## Build Setup
 
