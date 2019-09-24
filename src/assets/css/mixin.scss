@@ -1,0 +1,133 @@
+// xxx-high 高亮色  xxx-light 淡色
+$blue: #00a2ff;
+$bule-header: #00a2ff;
+$aside-bg: #549DE8;
+$bc: #e4e4e4;
+$white: #fff;
+$pagebg-color: #f0f1f5;
+$black: #000;
+$icon-graw: #333;
+$font-graw: #666;
+$black-light: #999;
+$black-high: #ccc;
+$black-bg: #eee;
+$main-bg: #F6F6F6;
+$pie: #01b1a2;
+$nav-name: #0AFDFE;
+$project-name: #26DBEE;
+$border: 1px solid #26E3F4;
+
+//font-size 1rem = 23.4px
+$font-size32: 1.39rem;
+$font-size24: 1.04rem;
+$font-size18: 0.78rem;
+$font-size16: 0.69rem;
+$font-size14: 0.60rem;
+$font-size12: 0.52rem;
+
+$size32: 32px;
+$size24: 24px;
+$size22: 24px;
+$size18: 18px;
+$size16: 16px;
+$size14: 14px;
+$size12: 12px;
+
+// 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//定位全屏
+@mixin allcover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin ct {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位到右边 上下居中
+@mixin centerRight($right) {
+  position: absolute;
+  top: 50%;
+  right: $right;
+  transform: translateY(-50%);
+}
+
+//定位到左边 上下居中
+@mixin centerLeft($left) {
+  position: absolute;
+  top: 50%;
+  left: $left;
+  transform: translateY(-50%);
+}
+
+//定位左右居中
+@mixin cl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//字体大小、行高、字体
+@mixin font($size, $line-height, $family: 'Microsoft YaHei') {
+  font: #{$size}/#{$line-height} $family;
+}
+
+//字体大小，颜色
+@mixin fontSizeColor($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+//flex 布局和 子元素 对齐方式
+@mixin fj($type: space-between) {
+  display: flex;
+  justify-content: $type;
+}
+
+//placehoder
+@mixin placeholder($white) {
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $white;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $white;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $white;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $white;
+  }
+}

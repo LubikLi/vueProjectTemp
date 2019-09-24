@@ -1,0 +1,298 @@
+/* 该容器使用 display布局 */
+
+.ly_flex {
+  display: flex;
+}
+
+.ly_block {
+  display: block;
+}
+
+.ly_inline_block {
+  display: inline-block;
+}
+
+.ly_none {
+  display: none;
+}
+
+.ly_flex_col {
+  flex-direction: column
+  /* 该容器中的内容采用列排列 */
+}
+
+.ly_flex_row {
+  flex-direction: row
+  /* 该容器中的内容采用行排列 */
+}
+
+.ly_flex_wrap_wrap {
+  flex-wrap: wrap;
+}
+
+.ly_flex_wrap_nowrap {
+  flex-wrap: nowrap;
+}
+
+/* 100%填充 */
+
+.ly_flex_1 {
+  flex: 1
+}
+
+.ly_flex_ali_center {
+  align-items: center
+}
+
+.ly_flex_ali_start {
+  align-items: flex-start;
+}
+
+.ly_flex_ali_end {
+  align-items: flex-end;
+}
+
+.ly_text_left {
+  text-align: left;
+}
+
+.ly_text_center {
+  text-align: center;
+}
+
+.ly_text_left {
+  text-align: left;
+}
+
+.ly_text_right {
+  text-align: right;
+}
+
+/* 容器左对齐 */
+
+.ly_flex_just_start {
+  justify-content: flex-start;
+}
+
+/*容器俩端对齐*/
+
+.ly_flex_just_between {
+  justify-content: space-between;
+}
+
+/*容器平均分布*/
+
+.ly_flex_just_around {
+  justify-content: space-around;
+}
+
+/* 容器居中对齐 */
+
+.ly_flex_just_center {
+  justify-content: center
+}
+
+/* 容器右边对齐 */
+
+.ly_flex_just_end {
+  justify-content: flex-end
+}
+
+/*容器宽度*/
+.pageContent {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/*左右布局*/
+.pageContentLeft {
+  width: 280px;
+  background: #fff;
+}
+
+.pageContentRight {
+  width: 920px;
+
+}
+
+/*容器内边距边距*/
+.contentPadding {
+  padding: 10px;
+}
+
+/*容器上边距*/
+.contentMargin {
+  margin-top: 20px;
+}
+
+/*白色背景色*/
+.contentBgWhile {
+  background: #fff;
+}
+
+/*新增按钮样式开始*/
+.addBtnStyle {
+  color: #4A8DF0;
+  font-size: 14px;
+}
+
+.addBtnStyle i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.addBtnStyle .el-dropdown-link {
+  color: #4A8DF0;
+}
+
+/*新增按钮样式结束*/
+
+/*查询条数样式*/
+.inquireNumber {
+  width: 100%;
+  line-height: 36px;
+  color: #000;
+  font-size: 14px;
+}
+
+.inquireNumber b {
+  color: red;
+}
+
+/*分页样式*/
+.pageModuleStyle {
+  margin-top: 10px;
+}
+
+/*重置下拉字体*/
+.el-dropdown-link {
+  cursor: pointer;
+  color: #fff;
+}
+
+.el-icon-arrow-down {
+  font-size: 14px;
+}
+
+/*多文本禁止拖动*/
+.el-textarea .el-textarea__inner {
+  resize: none;
+}
+
+/*表格边框*/
+.el-table td, .el-table th.is-leaf {
+  border: none;
+}
+
+.el-table .el-table__row--striped {
+  background: #fafbfc;
+}
+
+.el-tree-node__content {
+  height: 50px;
+}
+
+/*组织架构修改下拉样式*/
+.organizationPageLeft .el-select .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+}
+
+.organizationPageLeft .el-select .el-input {
+  width: 100px;
+}
+
+.organizationPageLeft .el-select .el-input__icon {
+  line-height: 30px;
+}
+
+/*上传控件样式修改*/
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+}
+
+/*上传控件样式修改结束*/
+
+
+/*dialog 样式修改*/
+.el-dialog__body {
+  padding: 0;
+}
+
+.el-dialog__body .el-form {
+  padding: 10px 30px;
+}
+
+.el-dialog__header {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/*弹窗底部*/
+.diaLogFoot {
+  margin-top: 20px;
+  height: 60px;
+  background: #e3e3e3;
+}
+
+/*dialog 样式修改结束*/
+
+
+/*标签样式修改开始*/
+.el-tag {
+  margin-right: 10px;
+}
+
+/*标签样式 修改结束*/
+
+.el-table th > .cell {
+  font-weight: bold;
+  color: #2B3642;
+}
+
+
+/*树形对其*/
+.custom-tree-node {
+  align-items: center;
+}
+
+
+/*表单样式*/
+.el-form-item__label {
+  width: 120px;
+}
+
+
+/*角色弹窗修改样式*/
+.roleAddBox .el-form-item__label {
+  width: 80px;
+}
+
+.roleAddBox .el-textarea {
+  width: 85%;
+}
